@@ -1,0 +1,31 @@
+- [ ] Functions
+- [ ] String manipulation
+- [ ] Array manipulation
+- [ ] Classes/structures
+- [ ] Linked list
+- [ ] Stack
+- [ ] Queue
+- [ ] Hash table
+- [ ] Binary search
+- [ ] Bitwise operations
+- [ ] Trees
+    - [ ] Binary search trees: BSTs
+    - [ ] Heap / Priority Queue / Binary Heap
+- [ ] Sorting
+    - [ ] Mergesort: O(n log n) average and worst case
+    - [ ] Quicksort O(n log n) average case
+    - [ ] Selection sort
+    - [ ] Insertion sort
+- [ ] Graphs
+    - [ ] DFS with adjacency list (recursive)
+    - [ ] DFS with adjacency matrix (recursive)
+    - [ ] BFS with adjacency list
+    - [ ] BFS with adjacency matrix
+    - [ ] single-source shortest path (Dijkstra)
+    - [ ] minimum spanning tree
+    - DFS-based algorithms 
+        - [ ] check for a cycle (needed for topological sort, since we'll check for the cycle before starting)
+        - [ ] topological sort
+        - [ ] count connected components in a graph
+        - [ ] list strongly connected components
+        - [ ] check for bipartite graph
