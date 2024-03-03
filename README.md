@@ -9,5 +9,5 @@ My language roadmap:
 - Creation of functions, classes/structures, array manipulation, etc.
   * Create a separated folder for every different language code, with algorithms and data structures on them.
 - Error handling, testing, documentation, concurrency.
-- Understand how the language evolved so i can use nowadays best practices. (AKA: avoid writing old-style code)
-- Understand most common used frameworks/libraries
+- Try to understand how the language evolved so i can use nowadays best practices. (AKA: avoid writing old-style code)
+- Understand/learn most common used frameworks/libraries

@@ -1,7 +1,7 @@
-- [ ] Pointers
-- [ ] Functions
-- [ ] String manipulation
-- [ ] Array manipulation
+- [-] Pointers
+- [-] Functions
+- [-] String manipulation
+- [-] Array manipulation
 - [ ] Classes/structures
 - [ ] Linked list
 - [ ] Stack
