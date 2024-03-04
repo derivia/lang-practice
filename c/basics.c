@@ -20,8 +20,7 @@ void printExternalConstant() {
  * Argv is a pointer to an array that stores strings.
  * There should be only one main function: 
  */
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
   printConstant();
   printExternalConstant();
   return EXIT_SUCCESS;
