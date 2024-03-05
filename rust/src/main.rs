@@ -9,21 +9,11 @@
 //  Vectors are like in C++, they have mutable size
 //  Rust will not automatically try to convert non-Boolean types to a Boolean
 
-const PI: f64 = 3.151592;
-
 // To get the functions from another file:
 mod funcs;
-use funcs::fizzbuzz;
-use funcs::countdown;
-use funcs::add_two_array_numbers;
-use funcs::print_first_two_elements;
-use funcs::exponent;
+mod hang;
+use hang::hangman;
 
 fn main() {
-    print_first_two_elements();
-    add_two_array_numbers();
-    println!("The value of PI is something like: {}", PI);
-    println!("and 4^3 = {}", exponent(4, 3));
-    countdown();
-    fizzbuzz(32);
+    hangman();
 }

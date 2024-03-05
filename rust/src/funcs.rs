@@ -4,13 +4,27 @@ pub fn fizzbuzz(max_number: u32) {
         if start % 3 == 0 && start % 5 == 0 {
             println!("fizzbuzz");
         } else if start % 3 == 0 {
-            println!("buzz");
+            println!("fizz");
         } else if start % 5 == 0 {
-            println!("fizzbuzz");
+            println!("buzz");
         } else {
             println!("{}", start);
         }
         start += 1;
+    }
+}
+
+pub fn fibonacci(max_number: u32) {
+    let mut left = 0;
+    let mut middle = 1;
+    let mut right = 1;
+    let mut count = 0;
+    while count < max_number {
+        println!("{}", left);
+        left = middle;
+        middle = right;
+        right = left + middle;
+        count = count + 1;
     }
 }
 
@@ -36,6 +50,16 @@ pub fn exponent(num1: u32, num2: u32) -> u32 {
         count += 1;
     }
     result
+}
+
+pub fn reverse_array<T>(arr: &mut [T]) {
+    let mut left = 0;
+    let mut right = arr.len() - 1;
+    while left < right {
+        arr.swap(left, right);
+        left += 1;
+        right -= 1;
+    }
 }
 
 pub fn countdown() {
