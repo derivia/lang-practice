@@ -12,8 +12,7 @@
 // To get the functions from another file:
 mod funcs;
 mod hang;
-use hang::hangman;
 
 fn main() {
-    hangman();
+    todo!();
 }

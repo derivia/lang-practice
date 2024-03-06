@@ -28,6 +28,10 @@ fn finish_game() {
     println!("Thank you for playing!");
 }
 
+fn show_word(word: String) {
+    
+}
+
 fn start_game() {
     println!("Hey, a Hangman game started!");
     println!("Enter your guess below:");
