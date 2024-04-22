@@ -1,3 +1,5 @@
+"use strict";
+
 const fs = require("node:fs");
 const https = require("node:https");
 
@@ -17,6 +19,6 @@ https.get(imageURL, (response) => {
       fileStream.close();
     })
     .on("error", () => {
-      console.error("Error downloading image");
+      console.error("Error writing image");
     });
 });
