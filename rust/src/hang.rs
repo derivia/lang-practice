@@ -21,19 +21,18 @@ fn get_word() -> Option<String> {
     Some(words[index].to_string())
 }
 
-// Handles the user guess, a string
-fn get_guess() {}
+fn get_guess() {
+    // @TODO
+}
 
 fn finish_game() {
-    println!("Thank you for playing!");
+    // @TODO
 }
 
 fn show_word(word: String) {
-    
+    // @TODO
 }
 
 fn start_game() {
-    println!("Hey, a Hangman game started!");
-    println!("Enter your guess below:");
-    let selected_word = get_word();
+    // @TODO
 }
