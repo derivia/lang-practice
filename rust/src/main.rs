@@ -11,8 +11,5 @@
 
 // To get the functions from another file:
 mod funcs;
-mod hang;
 
-fn main() {
-    todo!();
-}
+fn main() {}
