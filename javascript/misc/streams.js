@@ -34,25 +34,28 @@ server.listen(8000, "127.0.0.1", () => {
   console.log("listening on localhost:8000");
 });
 
-// https get example that saves a image 
-// to the current directory piping the readStream 
+// https get example that saves a image
+// to the current directory piping the readStream
 // from the request to a writeStream
 const imageURL = "https://upload.wikimedia.org/wikipedia/commons/6/6f/ChessSet.jpg"; // prettier-ignore
-const fileStream = fs.createWriteStream("image.jpg"); // creates a write stream on the current directory
+const writeStream = fs.createWriteStream("image.jpg"); // creates a write stream on the current directory
 
 // prettier-ignore
 https.get(imageURL, (response) => { // sends a get request to ChessSet.jpg
-  if (response.statusCode !== 200) { 
-    console.error("Failed to download image.");
+  if (response.statusCode !== 200) {
+    console.error("failed to download image.");
     return;
   }
-  response.pipe(fileStream); // pipes the response to the writable stream
-  fileStream
-    .on("finish", () => { 
-      console.log("Finished downloading image.");
-      fileStream.close(); // @TODO: don't know if this is necessary 
+  response.pipe(writeStream); // pipes the response (a readable stream) to the writable stream
+  writeStream
+    .on("finish", () => {
+      console.log("finished downloading image.");
+      // writeStream.close();
+      // // from node.js docs: if autoClose is set to true (default behavior)
+      // on 'error' or 'finish' the file descriptor will be closed automatically.
+      // so it's not necessary to close the stream after the finish event.
     })
     .on("error", () => {
-      console.error("Error writing image");
+      console.error("error writing image");
     });
 });
