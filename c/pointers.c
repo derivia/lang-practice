@@ -28,7 +28,8 @@ void swapByVal(int x, int y) {
 
 /* Here, one more value is created (temp) in order to swap the values from num1
  * and num2. The *x and *y are used on the function body in order to get the
- * value that is being pointed by the pointer, not the pointer itself */
+ * value that is being pointed by the pointer, not the pointer itself 
+ */
 void swapByPointer(int *x, int *y) {
   int temp = *x;
   *x = *y;
