@@ -59,3 +59,19 @@ https.get(imageURL, (response) => { // sends a get request to ChessSet.jpg
       console.error("error writing image");
     });
 });
+
+// asynchronous example using pipeline between two streams in order to save a cute cat image.
+(async () => {
+  try {
+    const writeStream = fs.createWriteStream("cat.jpg");
+    const response = await fetch(
+      "https://cloudfront-us-east-1.images.arcpublishing.com/newr7/AJJNCSONXRPMXFGBEEPB7RVCHM.jpg",
+    );
+    await pipeline(response.body, writeStream, (err) => {
+      if (err) throw err;
+    });
+  } catch (err) {
+    throw err;
+  }
+})();
+
