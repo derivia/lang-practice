@@ -6,4 +6,5 @@ typedef struct {
   int age;
   char *name;
 } Person;
+
 #endif 
