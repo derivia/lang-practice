@@ -72,7 +72,7 @@ int main(int argc, char *argv[]) {
     int openedFileDescriptor = open(filePath, O_RDONLY);
     if (openedFileDescriptor == -1) {
       perror("open failed");
-      return 1;
+      continue;
     }
     off_t offset = 0;
     struct stat fileStat;
