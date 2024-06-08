@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
     perror("bind failed");
     return 1;
   }
-  // makes the socket listen on the binded port
+  // makes the socket listen on the bound port
   listen(socketFileDescriptor, 32);
   // infinite loop (til program quits) to accept new connections, creating new sockets
   while (1) {
