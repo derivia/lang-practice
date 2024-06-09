@@ -16,6 +16,7 @@ class HTTPServer {
                               currentDateAndTime;
         socket.getOutputStream().write(httpResponse.getBytes("UTF-8"));
       }
+      httpServer.close();
     }
   }
 }
