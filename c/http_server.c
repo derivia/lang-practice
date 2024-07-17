@@ -9,7 +9,6 @@
 
 // clang-format off
 /*
- * @TODO: make this work on the browser (wget works)
  * file descriptors are entries, in format of integers, that represents opened files on the system
  * similarly, socket descriptors are integers that represents open sockets
  * the integer from functions that work with descriptors is something like the descriptor index
